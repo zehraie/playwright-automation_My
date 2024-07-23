@@ -34,7 +34,6 @@ test.describe("Assertion in UI testing", async () => {
     expect(href).toBe("/autocomplete");
     await expect(autocompleteLink).toHaveAttribute("href", "/autocomplete");
   });
-
 });
 
 
