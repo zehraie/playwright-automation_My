@@ -57,8 +57,8 @@ test('selectOptions method test: can be used for dropdowns', async ({ page }) =>
           value: option.value
         }));
       });
-      
       console.log(options);
+      console.log(`Tek selection: ${(options[0].text).toString()}`);
 
 });
 

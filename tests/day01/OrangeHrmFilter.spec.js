@@ -7,5 +7,11 @@ test('Filtering Locators', async ({ page }) => {
   await page.getByRole('button', { name: 'Login' }).click();
   await page.waitForTimeout(3000);
 
-  
+ await page.getByRole("listitem").filter({hasText:/Leave/}).click();
+ await page.waitForTimeout(3000);
+
+//  await page
+//  .getByRole('listitem')
+//  .filter({has: page.getByRole('link', { name: 'Leave' })}).click;
+//  await page.waitForTimeout(10000);
 });
