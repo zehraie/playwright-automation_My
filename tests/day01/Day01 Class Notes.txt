@@ -1,0 +1,41 @@
+PlayWright Automation Day01:
+
+Topics:
+	Introduction to Playwright
+	Environment Setup
+	@playwright/test package
+	Working with browsers (Headless & Headed)
+	Interacting with WebElements
+
+	Custom AI Prompt templates for better productivity
+
+Extensions:
+    Material Icon Theme
+    Code Runner
+    Prettier - Code formatter
+    JavaScript (ES6) code snippets
+    npm Intellisense
+    Playwright Test for VSCode
+    Playwright Snippets
+    Playwright Test Snippets
+    Tabnine
+
+	- .env file for credentials
+    
+    npm extention install then   cube icon a basip dotenv yi indir 
+    
+    ve you need to give.   **import dotenv from 'dotenv';  at the top of the class**
+    
+    **env icin credentiallar icin 
+    use** 
+    "dependencies": {
+        "dotenv": "^16.4.5"
+
+Next Class:
+	Assertions
+	More Locators
+	More Fixtures
+	More configurations
+	Prompt Engineering for Automation
+
+	
