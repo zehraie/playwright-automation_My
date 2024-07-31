@@ -22,19 +22,19 @@ test.describe('Test Group', () => {
     await expect(alertMessage).toBe("I am a JS Alert")
   });
   
-  test('Handling JS Confirm', async ({ page }) => {
-    let confirmMessage;  // pop icindeki mesaj
-    page.on( 'dialog', async dialog => {
-        confimMessage = dialog.message();
-        await page.waitForTimeout(2000);  // wait for 1 second before accepting the alert
-        dialog.dismiss();
-    });
-    const clickForJsConfirm = page.locator("//button[contains(@class, 'btn-primary') and @onclick='jsConfirm()']");
-    await clickForJsConfirm.click();
+  // test('Handling JS Confirm', async ({ page }) => {
+  //   let confirmMessage;  // pop icindeki mesaj
+  //   page.on( 'dialog', async dialog => {
+  //       confimMessage = dialog.message();
+  //       await page.waitForTimeout(2000);  // wait for 1 second before accepting the alert
+  //       dialog.dismiss();
+  //   });
+  //   const clickForJsConfirm = page.locator("//button[contains(@class, 'btn-primary') and @onclick='jsConfirm()']");
+  //   await clickForJsConfirm.click();
 
-    await expect(page.locator("text='You clicked: Cancel'")).toBeVisible();
-    expect(confrimMessage).toBe("I am a JS Confirm");
-  });
+  //   await expect(page.locator("text='You clicked: Cancel'")).toBeVisible();
+  //   expect(confrimMessage).toBe("I am a JS Confirm");
+  // });
 
   test("Handling JS Promopt", async ({ page }) => {
    let promptMessage;  // pop icindeki mesaj

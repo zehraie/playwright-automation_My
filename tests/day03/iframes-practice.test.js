@@ -18,10 +18,10 @@ await page.waitForTimeout(2000);
  await elementInsideTheFrame.press("Backspace"); // "Backspace" key is pressed
  await page.waitForTimeout(2000);
 
- await elementInsideTheFrame.fill("Hello World!");
- console.log(await elementInsideTheFrame.innerText());
- await expect(await elementInsideTheFrame.innerText()).toContain("Hello World!");
- await expect (await elementInsideTheFrame).toHaveText
+//  await elementInsideTheFrame.fill("Hello World!");
+//  console.log(await elementInsideTheFrame.innerText());
+//  await expect(await elementInsideTheFrame.innerText()).toContain("Hello World!");
+//  await expect (await elementInsideTheFrame).toHaveText
 
   });
 

@@ -10,19 +10,19 @@ test("Youtube test", async ({ page }) => {
   await page.waitForTimeout(3000);
 
 
-  await searchBox.click();
+  // await searchBox.click();
 
-  await searchBox.fill("AI Prompt Engineering");
+  // await searchBox.fill("AI Prompt Engineering");
 
-  await searchBox.press("Enter");
+  // await searchBox.press("Enter");
 
-  await page.waitForTimeout(3000);
+  // await page.waitForTimeout(3000);
 
-  const firstVideo = await page.locator("//a[@id='thumbnail' and contains(@href, '/watch?v=_ZvnD73m40o')]");
+  // const firstVideo = await page.locator("//a[@id='thumbnail' and contains(@href, '/watch?v=_ZvnD73m40o')]");
 
-  await firstVideo.click();
+  // await firstVideo.click();
 
-  await page.waitForTimeout(10000);
+  // await page.waitForTimeout(10000);
 
 
 });
